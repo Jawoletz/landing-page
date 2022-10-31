@@ -11,106 +11,89 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    padding: 0;
+    margin: 0;
 }
 
-header {
-    width: 80vw;
+/* HEADER */
+
+.header,
+.hero {
+    background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    padding: 0 16vw;
 }
 
-ul {
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.header__nav {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
     gap: 20px;
     margin-left: auto;
 }
 
-a {
-    text-decoration: none;
-    color: #F9FAF8;
-}
-
-.hero {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 5%;
-    height: auto;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-}
-
-h2 {
-    font-size: 36px;
-    color: #1F2937;
-}
-
-h3 {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-h4 {
+.header__link {
     font-size: 18px;
     color: #E5E7EB;
+    text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
-    padding: 0;
-}
+/* HERO */
 
-.bold {
-    font-weight: bold;
-}
-
-.bolder {
-    font-weight: bolder;
-}
-
-.italic {
-    font-weight: 100;
-    font-style: italic;
-}
-
-.info,
-.call-to-action {
-    background-color: #F9FAF8;
-}
-
-.testimonial {
-    background-color: #E5E7EB;
-}
-
-button,
-.call-to-action {
-    background-color: #3882F6;
-}
-
-.container {
+.hero {
     display: flex;
+    align-items: inherit;
+    gap: 48px;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
 }
 
+.hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* gap: 24px; */
+    max-width: 50%;
+}
 
+.hero__text-wrapper__main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0;
+}
 
+.hero__text-wrapper__secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.hero__image-wrapper {
+    display: flex;
+    max-width: 50%;
+}
+
+.hero__image {
+    width: 100%;
+    height: min-content;
+    object-fit: cover;
+}
